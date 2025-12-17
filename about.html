@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ethereal Hospitality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* About Page Specific Styles */
+        .page-hero {
+            background: linear-gradient(to bottom, #FFF6F8, #fdf4f6);
+            padding: 180px 0 120px;
+            text-align: center;
+            position: relative;
+        }
+
+        .page-hero::after {
+            content: '❀';
+            display: block;
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-top: 2rem;
+            opacity: 0.6;
+        }
+
+        .story-layout {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 6rem;
+            align-items: center;
+            margin: 4rem 0;
+        }
+
+        .editorial-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: var(--color-text-main);
+        }
+
+        .pull-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-style: italic;
+            color: var(--color-cta);
+            margin: 2rem 0;
+            padding-left: 20px;
+            border-left: 3px solid var(--color-border);
+        }
+
+        .image-container {
+            position: relative;
+            border-radius: 200px 200px 0 0;
+            /* Arch shape */
+            overflow: hidden;
+            height: 600px;
+            box-shadow: 0 30px 60px rgba(200, 155, 155, 0.15);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* USP Section */
+        .usp-section {
+            padding: 100px 0;
+            background: #fff;
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .usp-card {
+            background: var(--color-bg);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.4s ease;
+            cursor: default;
+        }
+
+        .usp-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            background: #fff;
+        }
+
+        .usp-icon {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent);
+        }
+
+        /* Philosophy */
+        .philosophy-section {
+            background-color: var(--color-secondary);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .philosophy-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--color-text-main);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        /* Trust/Reviews */
+        .trust-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .review-stars {
+            color: var(--color-accent);
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+        }
+
+        /* CTA */
+        .emotional-cta {
+            padding: 100px 0 150px;
+            text-align: center;
+            background: radial-gradient(circle, #fff0f3 0%, #fff 70%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ethereal.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="work.html" class="nav-link">Portfolio</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="page-hero reveal">
+        <div class="container">
+            <h1 style="font-size: 4rem; margin-bottom: 1rem;">Crafting Timeless <br> Wedding Experiences</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">
+                At Ethereal, we don’t just manage weddings — we curate emotions, moments, and memories that last
+                forever.
+            </p>
+        </div>
+    </header>
+
+    <!-- 2. Story Section -->
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="story-layout">
+                <div class="story-content">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Our Story</h2>
+                    <div class="editorial-text">
+                        <p style="margin-bottom: 1.5rem;">The journey began with a simple belief: that love deserves to
+                            be celebrated in its purest, most beautiful form. Ethereal was born out of a passion for
+                            storytelling through design, where every texture, scent, and sound is intentionally chosen
+                            to reflect the unique essence of the couple.</p>
+
+                        <div class="pull-quote">
+                            “Every wedding is a story — and we’re honored to tell yours.”
+                        </div>
+
+                        <p>Over the years, we have had the privilege of witnessing love in breathtaking locales, from
+                            the rolling hills of Tuscany to the quiet intimacy of private estates. We are more than
+                            planners; we are your confidants, your creative partners, and your peace of mind.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <!-- Placeholder for soft wedding image -->
+                    <img src="assets/images/about_story.jpg" alt="Ethereal Wedding Setup"
+                        style="background-color: #fcecef;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. USP Section -->
+    <section class="usp-section reveal">
+        <div class="container">
+            <div class="usp-grid">
+                <div class="usp-card">
+                    <div class="usp-icon">✦</div>
+                    <h4>Bespoke Planning</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Tailored specifically to your vision,
+                        never templated.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon">d</div>
+                    <h4>Luxury Hospitality</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">We treat every guest with white-glove
+                        care and warmth.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon">✧</div>
+                    <h4>Detail-Driven</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Perfection lies in the details others
+                        might miss.</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon">♡</div>
+                    <h4>Trusted Network</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Access to the world's most exclusive
+                        vendors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Philosophy Section -->
+    <section class="philosophy-section reveal">
+        <div class="container">
+            <p class="philosophy-text">“Luxury lies in the details — from the first welcome to the final farewell.”</p>
+        </div>
+    </section>
+
+    <!-- 5. Trust Indicators -->
+    <section class="trust-section reveal">
+        <div class="container">
+            <div class="review-stars">★★★★★</div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Why Couples Trust Us</h3>
+            <p style="max-width: 700px; margin: 0 auto 2rem; font-style: italic; color: var(--color-text-muted);">
+                "Choosing Ethereal was the best decision we made. They understood our silence, our chaos, and our love,
+                translating it all into a day we will never forget."
+            </p>
+            <p style="font-weight: 600; font-size: 0.9rem; letter-spacing: 1px;">— EMILY & DANIEL, 2024</p>
+        </div>
+    </section>
+
+    <!-- 6. Emotional CTA -->
+    <section class="emotional-cta reveal">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Let’s Create Your Forever</h2>
+            <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <a href="contact.html" class="btn btn-primary">Begin Your Journey</a>
+                <a href="work.html" class="btn">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="text-align: center; color: var(--color-text-muted); font-size: 0.85rem;">&copy; 2025 Ethereal
+                Hospitality.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

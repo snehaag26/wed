@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ethereal Hospitality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .portfolio-item {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: #fff;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ethereal.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="work.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero reveal" style="min-height: 400px; height: 50vh;">
+        <div class="container hero-content">
+            <h1>Our Works</h1>
+            <p class="hero-subtitle">A collection of our most exquisite events.</p>
+        </div>
+    </header>
+
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio1.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>The Venetian Gala</h3>
+                        <p>Venice, Italy</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio2.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Kyoto Garden Wedding</h3>
+                        <p>Kyoto, Japan</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio3.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Midnight in Paris</h3>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio4.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Alpine Retreat Corporate</h3>
+                        <p>Swiss Alps</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio5.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Modern Art Launch</h3>
+                        <p>New York, USA</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img"
+                        style="background: center/cover url('assets/images/portfolio6.jpg') no-repeat #ccc;"></div>
+                    <div class="portfolio-overlay">
+                        <h3>Desert Starlight Dinner</h3>
+                        <p>Dubai, UAE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ethereal Hospitality. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

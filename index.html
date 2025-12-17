@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal | Luxury Wedding Hospitality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .usp-section {
+            background-color: var(--color-white);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .usp-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            text-align: center;
+        }
+
+        .usp-item h3 {
+            font-size: 1.3rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .usp-item p {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+        }
+
+        .hero {
+            /* Fallback or gradient if image fails to load/generate */
+            background: radial-gradient(circle at center, rgba(243, 229, 227, 0.4) 0%, rgba(254, 251, 246, 1) 80%);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--color-text-muted);
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ethereal.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="work.html" class="nav-link">Portfolio</a></li>
+                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero reveal">
+        <div class="container hero-content">
+            <h1 style="font-size: 5rem; line-height: 1.1;">Irresistibly <span
+                    style="color: var(--color-accent); font-style: italic;">Elegant.</span></h1>
+            <p class="hero-subtitle">Where your dream wedding becomes a timeless reality. Experience luxury, romance,
+                and perfection in every detail.</p>
+            <div style="margin-top: 2.5rem;">
+                <a href="contact.html" class="btn btn-primary">Begin Your Journey</a>
+                <a href="work.html" class="btn" style="margin-left: 1rem; border-color: var(--color-border);">View
+                    Gallery</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Unique Selling Points -->
+    <section class="section-padding usp-section reveal">
+        <div class="container">
+            <div class="usp-grid">
+                <div class="usp-item reveal">
+                    <h3>Bespoke Artistry</h3>
+                    <p>Every wedding is a unique masterpiece, tailored to reflect your personal love story with artistic
+                        flair.</p>
+                </div>
+                <div class="usp-item reveal">
+                    <h3>Seamless Luxury</h3>
+                    <p>Enjoy a stress-free planning experience where every logistic is handled with white-glove
+                        precision.</p>
+                </div>
+                <div class="usp-item reveal">
+                    <h3>Trusted Excellence</h3>
+                    <p>With a decade of experience, we are the trusted choice for couples seeking perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services section-padding reveal" style="text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem;">Curated Experiences</h2>
+            <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--color-text-muted);">From intimate elopements
+                to grand ballroom galas, we offer a range of exclusive services.</p>
+
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <a href="services.html" class="btn">Full Planning</a>
+                <a href="services.html" class="btn">Design & Decor</a>
+                <a href="services.html" class="btn">Destination Weddings</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview (Trust Signal) -->
+    <section class="section-padding reveal" style="background-color: var(--color-secondary);">
+        <div class="container" style="text-align: center;">
+            <p
+                style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-style: italic; color: var(--color-text-main); margin-bottom: 2rem;">
+                "The most magical day of our lives. Ethereal didn't just plan our wedding; they created a fairytale."
+            </p>
+            <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">— Sophia & Alexander</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border); padding-bottom: 2rem; margin-bottom: 2rem;">
+                <a href="index.html" class="logo" style="font-size: 2rem;">Ethereal.</a>
+                <div class="footer-socials">
+                    <a href="#" style="margin-left: 1rem;">Instagram</a>
+                    <a href="#" style="margin-left: 1rem;">Pinterest</a>
+                </div>
+            </div>
+            <p style="text-align: center; color: var(--color-text-muted); font-size: 0.85rem;">&copy; 2025 Ethereal
+                Hospitality. Designed with Love.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

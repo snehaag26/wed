@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Ethereal Hospitality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            border-radius: 4px;
+            /* Slight radius */
+            text-align: center;
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+            font-family: serif;
+        }
+
+        .client-name {
+            margin-top: 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .client-role {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ethereal.</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="work.html" class="nav-link">Portfolio</a></li>
+                <li><a href="testimonials.html" class="nav-link active">Testimonials</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero reveal" style="min-height: 400px; height: 50vh;">
+        <div class="container hero-content">
+            <h1>Kind Words</h1>
+            <p class="hero-subtitle">Hear from those who have experienced the magic.</p>
+        </div>
+    </header>
+
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p>"Ethereal transformed our vision into a reality that far exceeded our expectations. The attention
+                        to detail was simply unmatched."</p>
+                    <div class="client-name">Sarah & James</div>
+                    <div class="client-role">Wedding Clients</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p>"Professional, creative, and utterly dedicated. They handled our corporate gala with such grace
+                        and precision. Truly world-class."</p>
+                    <div class="client-name">Michael Chen</div>
+                    <div class="client-role">CEO, TechFlow</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p>"Every moment felt curated. From the lighting to the flow of the evening, it was perfection. I
+                        cannot recommend them enough."</p>
+                    <div class="client-name">Isabella Ricci</div>
+                    <div class="client-role">Fashion Designer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ethereal Hospitality. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
