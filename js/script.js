@@ -41,4 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(element => {
         revealObserver.observe(element);
     });
+
+    // Hamburger Menu Logic
+    const hamburger = document.querySelector('.hamburger');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (hamburger && navLinksContainer) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinksContainer.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinksContainer.classList.remove('active');
+            });
+        });
+    }
 });

@@ -13,6 +13,11 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="./index.html" class="logo">Ethereal.</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="./index.html" class="nav-link">Home</a></li>
                 <li><a href="./about.html" class="nav-link">About</a></li>
@@ -25,7 +30,8 @@
     </nav>
 
     <!-- 1. Hero Section -->
-    <header class="services-hero reveal">
+    <header class="services-hero reveal"
+        style="background-image: linear-gradient(rgba(255, 246, 248, 0.8), rgba(255, 246, 248, 0.9)), url('./assets/images/services_hero_bg.png'); background-size: cover; background-position: center;">
         <div class="container">
             <h1 class="fs-4rem mb-1_5">Our Services</h1>
             <p class="fs-1-3rem text-muted fw-300">Bespoke planning and design for life’s most meaningful celebrations.
@@ -37,17 +43,20 @@
         <!-- 2. Overview Overview Cards -->
         <div class="overview-grid">
             <div class="overview-card">
-                <div class="fs-2rem text-accent mb-1">💍</div>
+                <img src="./assets/images/overview_wedding.png" alt="Wedding Icon"
+                    style="width: 80px; height: 80px; margin: 0 auto 1.5rem; border-radius: 50%; object-fit: cover;">
                 <h3 class="fs-1-4rem mb-0-5">Wedding Planning</h3>
                 <p class="fs-0-9rem text-muted">Crafting your perfect love story.</p>
             </div>
             <div class="overview-card">
-                <div class="fs-2rem text-accent mb-1">🏢</div>
+                <img src="./assets/images/service_corporate_photo.png" alt="Corporate Icon"
+                    style="width: 80px; height: 80px; margin: 0 auto 1.5rem; border-radius: 50%; object-fit: cover;">
                 <h3 class="fs-1-4rem mb-0-5">Corporate Events</h3>
                 <p class="fs-0-9rem text-muted">Sophistication for your brand.</p>
             </div>
             <div class="overview-card">
-                <div class="fs-2rem text-accent mb-1">🎉</div>
+                <img src="./assets/images/service_private_photo.png" alt="Private Icon"
+                    style="width: 80px; height: 80px; margin: 0 auto 1.5rem; border-radius: 50%; object-fit: cover;">
                 <h3 class="fs-1-4rem mb-0-5">Private Celebrations</h3>
                 <p class="fs-0-9rem text-muted">Intimate and unforgettable moments.</p>
             </div>
@@ -71,7 +80,7 @@
                     </ul>
                 </div>
                 <div class="detail-image">
-                    <img src="./assets/images/service_wedding.svg" alt="Wedding Planning">
+                    <img src="./assets/images/service_wedding_photo.png" alt="Wedding Planning">
                 </div>
             </div>
         </div>
@@ -94,7 +103,7 @@
                     </ul>
                 </div>
                 <div class="detail-image">
-                    <img src="./assets/images/service_corporate.svg" alt="Corporate Events">
+                    <img src="./assets/images/service_corporate_photo.png" alt="Corporate Events">
                 </div>
             </div>
         </div>
@@ -117,7 +126,7 @@
                     </ul>
                 </div>
                 <div class="detail-image">
-                    <img src="./assets/images/service_private.svg" alt="Private Celebrations">
+                    <img src="./assets/images/service_private_photo.png" alt="Private Celebrations">
                 </div>
             </div>
         </div>
@@ -156,6 +165,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Removed Trusted Partners from Services Page -->
 
     <!-- 8. CTA Section -->
     <section class="section-padding reveal text-center bg-gradient-soft">
